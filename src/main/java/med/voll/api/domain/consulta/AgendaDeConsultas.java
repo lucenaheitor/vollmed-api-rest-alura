@@ -56,7 +56,7 @@ public class AgendaDeConsultas {
             throw  new ValidationExcepetion("Especialidade obrigatoria quando  o médidco n for especioficado");
 
         }
-        return  medicoRepository.escolherMedicoAleatorio(dados.especialidade(), dados.data());
+        return  medicoRepository.escolherMedicoAleatorioLivreNaData(dados.especialidade(), dados.data());
     }
 
     public void cancelarConsulta(DadosCancelamentoConsultaDTO dados) {
